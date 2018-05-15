@@ -30,7 +30,7 @@ BTCi address if this helped you and you love me: B654n7tNRTUhdE5ojSiWK5v5pvbR19G
 
 1. Connect to your linux vps AS ROOT (AWS USERS USE sudo -i TO LOGIN AS ROOT), copy and paste the following to get started:
 ```
-cd && sudo apt-get -y install git && sudo git clone https://github.com/testiface/test.git && cd test/ && sudo bash install.sh
+cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncognito/btcimn.git && cd btcimn/ && sudo bash install.sh
 ```
 2. follow the prompts closely and don't mess it up!
 3. Move to Part 3
