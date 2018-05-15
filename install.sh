@@ -62,8 +62,8 @@ sleep 2
 echo ""
 echo ""
 echo -e "${GREEN}Moving stuff where it ${RED}NEEDS to be${NC}"
-sudo chmod +x /root/test/btcid /root/test/btci-cli
-sudo mv /root/test/btcid /root/test/btci-cli /usr/local/bin
+sudo chmod +x /root/btcimn/btcid /root/btcimn/btci-cli
+sudo mv /root/btcimn/btcid /root/btcimn/btci-cli /usr/local/bin
 echo ""
 echo ""
 sleep 2
