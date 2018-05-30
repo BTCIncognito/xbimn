@@ -69,8 +69,8 @@ sleep 2
 echo -e "${GREEN}Creating the ${RED}Configuration File Now${NC}"
 sleep 2
 sudo mkdir /root/.xbi
-echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /root/.BTCi/btci.conf
-echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /root/.BTCi/btci.conf
+echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /root/.xbi/xbi.conf
+echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /root/.xbi/xbi.conf
 echo "rpcallowip=127.0.0.1" >> /root/.xbi/xbi.conf
 echo "listen=1" >> /root/.xbi/xbi.conf
 echo "server=1" >> /root/.xbi/xbi.conf
