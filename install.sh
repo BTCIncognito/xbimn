@@ -2,7 +2,7 @@
 
 echo "*******************************"
 echo "*                             *"
-echo "*      BTCi Masternode        *"
+echo "*       XBI Masternode        *"
 echo "*           SETUP             *"
 echo "*            BY               *"
 echo "*         CryptoBat           *"
@@ -32,7 +32,6 @@ sleep 5
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install wget nano unrar unzip -y
 sudo apt-get install libboost-all-dev libevent-dev software-properties-common -y
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update
@@ -62,29 +61,29 @@ sleep 2
 echo ""
 echo ""
 echo -e "${GREEN}Moving stuff where it ${RED}NEEDS to be${NC}"
-sudo chmod +x /root/btcimn/btcid /root/btcimn/btci-cli
-sudo mv /root/btcimn/btcid /root/btcimn/btci-cli /usr/local/bin
+sudo chmod +x /root/btcimn/xbid /root/btcimn/xbi-cli
+sudo mv /root/btcimn/xbid /root/btcimn/xbi-cli /usr/local/bin
 echo ""
 echo ""
 sleep 2
 echo -e "${GREEN}Creating the ${RED}Configuration File Now${NC}"
 sleep 2
-sudo mkdir /root/.BTCi
+sudo mkdir /root/.xbi
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /root/.BTCi/btci.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /root/.BTCi/btci.conf
-echo "rpcallowip=127.0.0.1" >> /root/.BTCi/btci.conf
-echo "listen=1" >> /root/.BTCi/btci.conf
-echo "server=1" >> /root/.BTCi/btci.conf
-echo "daemon=1" >> /root/.BTCi/btci.conf
-echo "maxconnections=250" >> /root/.BTCi/btci.conf
-echo "masternode=1" >> /root/.BTCi/btci.conf
-echo "masternodeaddr$IP:7250" >> /root/.BTCi/btci.conf
-echo "externalip$IP:7250" >> /root/.BTCi/btci.conf
-echo "masternodeprivkey=$KEY" >> /root/.BTCi/btci.conf
+echo "rpcallowip=127.0.0.1" >> /root/.xbi/xbi.conf
+echo "listen=1" >> /root/.xbi/xbi.conf
+echo "server=1" >> /root/.xbi/xbi.conf
+echo "daemon=1" >> /root/.xbi/xbi.conf
+echo "maxconnections=250" >> /root/.xbi/xbi.conf
+echo "masternode=1" >> /root/.xbi/xbi.conf
+echo "masternodeaddr$IP:7250" >> /root/.xbi/xbi.conf
+echo "externalip$IP:7250" >> /root/.xbi/xbi.conf
+echo "masternodeprivkey=$KEY" >> /root/.xbi/xbi.conf
 echo -e "${GREEN}STARTING THE DAEMON${NC}"
 cd /root
-sudo btcid
+sudo xbid
 sleep 2
 echo ""
 echo ""
-echo -e "Thank you for installing BTCi.  Please move onto the ${RED}NEXT${NC} step."
+echo -e "Thank you for installing XBI.  Please move onto the ${RED}NEXT${NC} step."
