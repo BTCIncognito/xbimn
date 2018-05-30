@@ -1,14 +1,4 @@
-# BTCi Masternode Install Script
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
-
-Stable and cheap host here https://m.do.co/c/b93026fab810
-
-BTCi address if this helped you and you love me: B654n7tNRTUhdE5ojSiWK5v5pvbR19G9j8
-
-# This guide is meant for setting up a HOT/COLD SETUP WITH WINDOWS AND LINUX.
-
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
+# XBI Masternode Install Script
 # Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
 
 # Part 1 - Sending Collateral Coins
@@ -16,7 +6,7 @@ BTCi address if this helped you and you love me: B654n7tNRTUhdE5ojSiWK5v5pvbR19G
 1. Open your Windows wallet - MAKE SURE IT IS SYNCED WITH THE NETWORK
 2. Go to Tools -> Debug Console
 3. Type: getaccountaddress MN# (# is your masternode number you want to use)
-4. Send 1500 BTCi to this address
+4. Send 1500 XBI to this address
 5. Go to Tools -> Debug Console
 6. Type: masternode outputs (This can take a minute before an output is shown)
 7. Type: masternode genkey
@@ -50,14 +40,3 @@ cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncogn
 1. In your wallet, go to Tools -> Debug Console
 2. Enter ```startmasternode alias 0 <alias>``` with ```<alias>``` being the name of your masternode from Part 3
 3. Enjoy!  You can start this process over again for another MN on a fresh Linux VPS!
-
-# Bronate if this helped
-
-*Official BTCi Discord: https://discord.gg/4YVntwG
-
-
-# Recommended Tools
-
-- Putty - Easy to use and customizable SSH client.
-- SuperPutty - This allows you to have multiple Putty tabs open in one window, allowing you to easily organize and switch between masternode servers.
-
