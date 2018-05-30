@@ -74,18 +74,18 @@ echo ""
 sleep 2
 echo -e "${GREEN}Creating the ${RED}Configuration File Now${NC}"
 sleep 2
-sudo mkdir /root/.xbi
-echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /root/.xbi/xbi.conf
-echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /root/.xbi/xbi.conf
-echo "rpcallowip=127.0.0.1" >> /root/.xbi/xbi.conf
-echo "listen=1" >> /root/.xbi/xbi.conf
-echo "server=1" >> /root/.xbi/xbi.conf
-echo "daemon=1" >> /root/.xbi/xbi.conf
-echo "maxconnections=250" >> /root/.xbi/xbi.conf
-echo "masternode=1" >> /root/.xbi/xbi.conf
-echo "masternodeaddr$IP:7250" >> /root/.xbi/xbi.conf
-echo "externalip$IP:7250" >> /root/.xbi/xbi.conf
-echo "masternodeprivkey=$KEY" >> /root/.xbi/xbi.conf
+sudo mkdir /root/.XBI
+echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /root/.XBI/xbi.conf
+echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /root/.XBI/xbi.conf
+echo "rpcallowip=127.0.0.1" >> /root/.XBI/xbi.conf
+echo "listen=1" >> /root/.XBI/xbi.conf
+echo "server=1" >> /root/.XBI/xbi.conf
+echo "daemon=1" >> /root/.XBI/xbi.conf
+echo "maxconnections=250" >> /root/.XBI/xbi.conf
+echo "masternode=1" >> /root/.XBI/xbi.conf
+echo "masternodeaddr$IP:7250" >> /root/.XBI/xbi.conf
+echo "externalip$IP:7250" >> /root/.XBI/xbi.conf
+echo "masternodeprivkey=$KEY" >> /root/.XBI/xbi.conf
 echo -e "${GREEN}STARTING THE DAEMON${NC}"
 cd /root
 sudo xbid
