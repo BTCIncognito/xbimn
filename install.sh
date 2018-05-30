@@ -30,12 +30,18 @@ echo ""
 echo -e "${RED}PLEASE KEEP YOUR HANDS AND FEET INSIDE THE RIDE AT ALL TIMES!${NC}"
 sleep 5
 
+
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install libboost-all-dev libevent-dev software-properties-common -y
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+sudo apt-get install libpthread-stubs0-dev -y
+sudo apt-get install libzmq3-dev -y
+sudo apt install -y make build-essential libtool software-properties-common autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev \
+libboost-program-options-dev libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git curl libdb4.8-dev \
+bsdmainutils libdb4.8++-dev libminiupnpc-dev libgmp3-dev ufw pkg-config libevent-dev libdb5.3++ unzip libzmq5
 sleep 2
 echo -e "${GREEN}Downloading more ram!${NC}"
 sleep 5 
