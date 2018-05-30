@@ -1,5 +1,5 @@
 # XBI Masternode Install Script
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
+# Use this script on a fresh install of Ubuntu 16.04 - MUST BE 16.04 x64
 
 # Part 1 - Sending Collateral Coins
 
