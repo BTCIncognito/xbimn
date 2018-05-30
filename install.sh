@@ -61,8 +61,8 @@ sleep 2
 echo ""
 echo ""
 echo -e "${GREEN}Moving stuff where it ${RED}NEEDS to be${NC}"
-sudo chmod +x /root/btcimn/xbid /root/btcimn/xbi-cli
-sudo mv /root/btcimn/xbid /root/btcimn/xbi-cli /usr/local/bin
+sudo chmod +x /root/xbimn/xbid /root/xbimn/xbi-cli
+sudo mv /root/xbimn/xbid /root/xbimn/xbi-cli /usr/local/bin
 echo ""
 echo ""
 sleep 2
