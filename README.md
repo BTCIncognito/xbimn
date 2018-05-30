@@ -20,7 +20,7 @@
 
 1. Connect to your linux vps AS ROOT (AWS USERS USE sudo -i TO LOGIN AS ROOT), copy and paste the following to get started:
 ```
-cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncognito/btcimn.git && cd btcimn/ && sudo bash install.sh
+cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncognito/xbimn.git && cd xbimn/ && sudo bash install.sh
 ```
 2. follow the prompts closely and don't mess it up!
 3. Move to Part 3
