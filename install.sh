@@ -86,6 +86,9 @@ echo "masternode=1" >> /root/.XBI/xbi.conf
 echo "masternodeaddr$IP:7250" >> /root/.XBI/xbi.conf
 echo "externalip$IP:7250" >> /root/.XBI/xbi.conf
 echo "masternodeprivkey=$KEY" >> /root/.XBI/xbi.conf
+echo "addnode=btci.seeds.mn.zone" >> /root/.XBI/xbi.conf
+echo "addnode=btci.mnseeds.com" >> /root/.XBI/xbi.conf
+
 echo -e "${GREEN}STARTING THE DAEMON${NC}"
 cd /root
 sudo xbid
