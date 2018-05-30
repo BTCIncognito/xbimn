@@ -38,5 +38,6 @@ cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncogn
 # Part 4 - Starting the Masternode
 
 1. In your wallet, go to Tools -> Debug Console
-2. Enter ```startmasternode alias 0 <alias>``` with ```<alias>``` being the name of your masternode from Part 3
-3. Enjoy!  You can start this process over again for another MN on a fresh Linux VPS!
+2. Wait for your transaction to your masternode address to have 16 confirmations - This is extremely important.
+3. Enter ```startmasternode alias 0 <alias>``` with ```<alias>``` being the name of your masternode from Part 3
+4. Enjoy!  You can start this process over again for another MN on a fresh Linux VPS!
